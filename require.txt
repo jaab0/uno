@@ -1,0 +1,33 @@
+
+1 archivo 
+<FORM action='dos.php' method='post'>
+ equipo<input type='text' name='equipo'>
+       <input type='submit'>
+
+
+
+</FORM>
+
+
+
+2 archivo
+<?php
+ 
+  require "utils/saludar.php";
+ 
+  if($_SERVER['REQUEST_METHOD']=='POST'){
+    $e=$_POST['equipo'];
+
+    echo saludar($e);
+  }
+?>
+
+
+
+
+3 archivo
+<?php
+    function saludar($m){
+       RETURN " VAMOS EL ".$m;
+    }
+?>
