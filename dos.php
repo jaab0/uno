@@ -4,7 +4,7 @@
   if($_SERVER['REQUEST_METHOD']=='POST'){
     $e=$_POST['equipo'];
 
-    echo saludar($e);
+    echo saludar($e)." ";
   }
 ?>
 
